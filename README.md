@@ -51,4 +51,4 @@ Si deseas contribuir a esta wiki, ¡eres bienvenido! Puedes seguir los siguiente
 - [Documentación oficial de Bootstrap](https://getbootstrap.com/)
 - [Comunidad de Bootstrap en español](https://www.facebook.com/groups/bootstrap.es/)
 
-¡Esperamos que esta wiki te sea de gran utilidad para aprender y dominar Bootstrap!
+¡Espero que esta wiki te sea de gran utilidad para aprender y dominar Bootstrap!

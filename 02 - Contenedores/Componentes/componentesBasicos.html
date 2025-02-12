@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Se enlaza el archivo CSS de Bootstrap desde la carpeta node_modules -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    
+    <!-- Se enlaza el archivo JavaScript de Bootstrap desde la carpeta node_modules -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+
+<body>
+    <!-- Sección de Botones -->
+    <h1>Botones</h1>
+    <!-- Botones con clases de colores predefinidos -->
+    <button type="button" class="btn btn-primary">Botón Primary</button>
+    <button type="button" class="btn btn-secondary">Botón Secondary</button>
+    <button type="button" class="btn btn-success">Botón Success</button>
+    <button type="button" class="btn btn-danger">Botón Danger</button>
+    <button type="button" class="btn btn-warning">Botón Warning</button>
+    <button type="button" class="btn btn-info">Botón Info</button>
+    <button type="button" class="btn btn-light">Botón Light</button>
+    <button type="button" class="btn btn-dark">Botón Dark</button>
+    
+    <!-- Botón con estilo de enlace -->
+    <button type="button" class="btn btn-link">Botón Link</button>
+
+    <br><br>
+    
+    <!-- Sección de botones con contorno -->
+    <h3>Outline</h3>
+    <button type="button" class="btn btn-dark btn-outline-danger">Botón Dark</button>
+    <button type="button" class="btn btn-warning btn-outline-secondary">Botón warning</button>
+
+    <br><br>
+    
+    <!-- Sección de Botones con tamaños -->
+    <h3>Tamaños</h3>
+    <button type="button" class="btn btn-dark btn-sm">Botón pequeño</button>
+    <button type="button" class="btn btn-dark btn">Botón mediano</button>
+    <button type="button" class="btn btn-dark btn-lg">Botón grande</button>
+
+    <!-- Sección de Botones agrupados -->
+    <h1>Botones agrupados</h1>
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary">Botón Primary</button>
+        <button type="button" class="btn btn-secondary">Botón Secondary</button>
+        <button type="button" class="btn btn-success">Botón Success</button>
+        <button type="button" class="btn btn-danger">Botón Danger</button>
+    </div>
+
+    <br><br>
+    
+    <!-- Botón dentro de un grupo con un checkbox -->
+    <div class="btn-group">
+        <input type="checkbox" class="btn-check" id="botoncheck1">
+        <label type="button" class="btn btn-outline-primary" for="botoncheck1">Botón Primary</label>
+    </div>
+
+    <!-- Sección de Alertas -->
+    <h1>Alertas</h1>
+    <div class="alert alert-success">Alerta</div>
+    <div class="alert alert-primary">Alerta</div>
+    <div class="alert alert-danger">Alerta</div>
+
+    <!-- Alerta con encabezado y botón para cerrarla -->
+    <h3>Contenido</h3>
+    <div class="alert alert-danger">
+        <h4 class="alert-heading">tituloAlerta heading</h4>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus accusantium, consequatur qui similique odit dolorum. Tempore magnam assumenda aperiam soluta illum rem laudantium animi ullam dignissimos, dolore, architecto, atque id.</p>
+        <button type="button" class="btn-close" data-bs-dismiss='alert'></button>
+    </div>
+
+    <!-- Sección de Badge -->
+    <h1>Bagde</h1>
+    <button class="btn btn-primary">
+        Mensaje <span class="badge text-bg-secondary rounded-pill">3</span>
+    </button>
+
+    <!-- Sección de Listas de grupo -->
+    <h1>Listas de grupos</h1>
+    <ul class="list-group">
+        <li class="list-group-item active">Primero</li>
+        <li class="list-group-item">segundo</li>
+        <li class="list-group-item disabled">tercero</li>
+    </ul>
+</body>
+
+</html>

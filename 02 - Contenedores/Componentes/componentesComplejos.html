@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,134 @@
 
     <!-- Enlace a Bootstrap desde Node.js -->
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="./node_modules/@popperjs/core/dist/umd/popper-base.js"></script>
 </head>
+
 <body>
+    <h1>Dropdown</h1>
+    <div class="dropdown">
+        <button class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">
+            Mi listado
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="" class="dropdown-item">Item 1</a>
+                </li>
+
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+
+                <li>
+                    <a href="" class="dropdown-item">Item 2</a>
+                </li>
+
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+
+                <li>
+                    <a href="" class="dropdown-item">Item 2</a>
+                </li>
+            </ul>
+        </button>
+    </div>
+
+    <h1>Nav</h1>
+
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+            <a href="#" class="nav-link">Opcion 1</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#" class="nav-link">Opcion 2</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Opcion 3</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                Opcion 4 - dropdown</a>
+
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="" class="dropdown-item">Item 1</a>
+                </li>
+
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+
+                <li>
+                    <a href="" class="dropdown-item">Item 2</a>
+                </li>
+
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+
+                <li>
+                    <a href="" class="dropdown-item">Item 2</a>
+                </li>
+            </ul>
+
+        </li>
 
 
-    
+    </ul>
+    <br>
+    <br>
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a href="#" class="nav-link">Opcion 1</a>
+        </li>
 
+        <li class="nav-item">
+            <a href="#" class="nav-link">Opcion 2</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="#" class="nav-link disabled">Opcion 3</a>
+        </li>
+    </ul>
+
+    <h1>Cards</h1>
+    <div class="card">
+        <div class="card-header">
+            cabecera
+        </div>
+        <div class="card-body text-bg-danger">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo accusantium quam distinctio nam dolore! Doloribus officiis vitae iusto aut distinctio architecto at ut beatae ducimus voluptatibus! Assumenda sint enim quo.
+        </div>
+        <div class="card-footer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, porro.
+        </div>
+    </div>
+
+    <h1>Modal</h1>
+
+    <div class="modal fade" id="exampleModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title">Titulo Modal</h1>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    contenido
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">abrir</button>
     <!-- Script de Bootstrap -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
+
 </html>

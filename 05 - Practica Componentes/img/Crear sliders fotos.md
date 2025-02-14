@@ -102,16 +102,43 @@ Añade la clase `carousel-fade` para un efecto más suave:
 <div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
 ```
 
-### b) Ajustar la velocidad de transición con JavaScript
-Podemos definir el intervalo de tiempo entre cambios de diapositivas con JavaScript:
+Aquí te dejo una versión mejor maquetada de la información que has dado:
+
+---
+
+### b) Ajustar la velocidad de transición
+
+Podemos definir el intervalo de tiempo entre los cambios de diapositivas de dos maneras:
+
+#### 1. Usando el atributo `data-bs-interval` en HTML:
+Con este atributo, podemos establecer el tiempo (en milisegundos) entre cada transición.
+
+```html
+<div class="carousel-item active" data-bs-interval="10000">
+  <img src="..." class="d-block w-100" alt="...">
+</div>
+<div class="carousel-item" data-bs-interval="2000">
+  <img src="..." class="d-block w-100" alt="...">
+</div>
+<div class="carousel-item">
+  <img src="..." class="d-block w-100" alt="...">
+</div>
+```
+
+#### 2. Usando JavaScript:
+También podemos ajustar el intervalo de las diapositivas directamente con JavaScript. Aquí, se puede definir la duración de la transición y otras opciones como el comportamiento del carrusel.
 
 ```js
 var myCarousel = document.querySelector('#carouselExample');
 var carousel = new bootstrap.Carousel(myCarousel, {
     interval: 3000, // Cambia cada 3 segundos
-    wrap: true // Permite que el slider vuelva a la primera imagen
+    wrap: true      // Permite que el slider vuelva a la primera imagen
 });
 ```
+
+---
+
+Con esta estructura y formato, la información queda más clara y fácil de leer.
 
 ---
 

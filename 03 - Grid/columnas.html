@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Grid Examples</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="./node_modules/@popperjs/core/dist/umd/popper-base.js"></script>
+</head>
+
+<body class="p-4">
+    <h1 class="text-center mb-4">Ejemplos de Grid en Bootstrap</h1>
+    
+    <!-- Ejemplo básico de columnas -->
+    <h2>Ejemplo básico</h2>
+    <div class="row text-white">
+        <div class="col bg-primary p-3">Columna 1</div>
+        <div class="col bg-danger p-3">Columna 2</div>
+        <div class="col bg-primary p-3">Columna 3</div>
+    </div>
+    
+    <!-- Especificando tamaños de columna -->
+    <h2 class="mt-4">Tamaños específicos</h2>
+    <div class="row text-white">
+        <div class="col-4 bg-success p-3">Col 4</div>
+        <div class="col-8 bg-warning p-3">Col 8</div>
+    </div>
+
+    <!-- Distribución de columnas -->
+    <h2 class="mt-4">Distribución y alineación</h2>
+    <div class="row justify-content-between text-white">
+        <div class="col-3 bg-info p-3">Izquierda</div>
+        <div class="col-3 bg-secondary p-3">Centro</div>
+        <div class="col-3 bg-dark p-3">Derecha</div>
+    </div>
+    
+    <!-- Anidación de columnas -->
+    <h2 class="mt-4">Anidación de columnas</h2>
+    <div class="row text-white">
+        <div class="col bg-primary p-3">
+            Columna principal
+            <div class="row mt-2">
+                <div class="col bg-light text-dark p-2">Subcolumna 1</div>
+                <div class="col bg-light text-dark p-2">Subcolumna 2</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Columnas con diferentes alturas -->
+    <h2 class="mt-4">Columnas con diferente altura</h2>
+    <div class="row align-items-end text-white" style="height: 200px;">
+        <div class="col bg-success p-3">Baja</div>
+        <div class="col bg-danger p-5">Alta</div>
+        <div class="col bg-info p-2">Más baja</div>
+    </div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html

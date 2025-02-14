@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+
+    <div id="miAlerta" class="alert alert-warning alert-dismissible fade show" role="alert">
+        ¡Esto es una alerta!
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+    
+
+
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+    <script>
+        const alerta = new bootstrap.Alert(document.getElementById('miAlerta'));
+        setTimeout(() => alerta.close(), 3000); // Cierra la alerta después de 3 segundos
+    </script>
+
+</body>
+
+</html>

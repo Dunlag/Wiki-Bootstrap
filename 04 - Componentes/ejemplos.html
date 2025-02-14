@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos Bootstrap con JS</title>
+    
+    <!-- Enlace a Bootstrap desde Node.js -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="p-4">
+
+    <h1 class="text-center mb-4">Ejemplos de Bootstrap con JavaScript</h1>
+
+    <!-- Alerta con botón para cerrarla -->
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        ¡Cuidado! Esto es una alerta de Bootstrap con JavaScript.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Cerrar"></button>
+    </div>
+
+    <!-- Dropdown -->
+    <div class="dropdown mb-3">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+            Menú desplegable
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item" href="#">Opción 1</a></li>
+            <li><a class="dropdown-item" href="#">Opción 2</a></li>
+            <li><a class="dropdown-item" href="#">Opción 3</a></li>
+        </ul>
+    </div>
+
+    <!-- List Group -->
+    <ul class="list-group mb-3">
+        <li class="list-group-item">Elemento 1</li>
+        <li class="list-group-item">Elemento 2</li>
+        <li class="list-group-item">Elemento 3</li>
+    </ul>
+
+    <!-- Botón para abrir el modal -->
+    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#miModal">
+        Abrir Modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="miModalLabel">Título del Modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    Este es un modal de Bootstrap activado con JavaScript.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Guardar cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="./node_modules/@popperjs/core/dist/umd/popper-base.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+</html>

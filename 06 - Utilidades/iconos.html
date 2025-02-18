@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iconos en Bootstrap</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+
+<body class="p-5">
+
+    <h1 class="mb-4">Ejemplos de Iconos de Bootstrap</h1>
+
+    <!-- Iconos básicos -->
+    <h3>Iconos simples</h3>
+    <p>
+        <i class="bi bi-airplane-engines fs-1 text-primary"></i>
+        <i class="bi bi-ubuntu fs-1 text-danger"></i>
+        <i class="bi bi-windows fs-1 text-success"></i>
+        <i class="bi bi-twitch fs-1 text-warning"></i>
+        <i class="bi bi-xbox fs-1 text-info"></i>
+    </p>
+
+    <hr>
+
+    <!-- Iconos en botones -->
+    <h3>Iconos en botones</h3>
+    <button class="btn btn-primary">
+        <i class="bi bi-check-circle"></i> Confirmar
+    </button>
+
+    <button class="btn btn-danger">
+        <i class="bi bi-trash"></i> Eliminar
+    </button>
+
+    <button class="btn btn-success">
+        <i class="bi bi-download"></i> Descargar
+    </button>
+
+    <hr>
+
+    <!-- Iconos en campos de búsqueda -->
+    <h3>Iconos en campos de búsqueda</h3>
+    <div class="input-group mb-3">
+        <span class="input-group-text"><i class="bi bi-search"></i></span>
+        <input type="text" class="form-control" placeholder="Buscar...">
+    </div>
+
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Correo electrónico">
+        <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+    </div>
+
+    <hr>
+
+    <!-- Iconos en listas -->
+    <h3>Listas con iconos</h3>
+    <ul class="list-group">
+        <li class="list-group-item"><i class="bi bi-star-fill text-warning"></i> Favoritos</li>
+        <li class="list-group-item"><i class="bi bi-person-fill text-primary"></i> Perfil</li>
+        <li class="list-group-item"><i class="bi bi-gear-fill text-secondary"></i> Configuración</li>
+    </ul>
+
+    <hr>
+
+    <!-- Iconos en enlaces -->
+    <h3>Enlaces con iconos</h3>
+    <a href="#" class="text-decoration-none"><i class="bi bi-arrow-right"></i> Más información</a>
+    <br>
+    <a href="#" class="text-decoration-none"><i class="bi bi-link-45deg"></i> Ver detalles</a>
+
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+</body>
+
+</html>

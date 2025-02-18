@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos de Flex en Bootstrap</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body class="container py-4">
+    <h1 class="text-center mb-4">Ejemplos de Flex en Bootstrap</h1>
+
+    <!-- Flex básico -->
+    <h2>Flex Base</h2>
+    <div class="d-flex border p-3">
+        <div class="bg-success text-white border p-3">1</div>
+        <div class="bg-success text-white border p-3">2</div>
+        <div class="bg-success text-white border p-3">3</div>
+        <div class="bg-success text-white border p-3">4</div>
+    </div>
+
+    <br>
+    
+    <!-- Dirección de flex -->
+    <h2>Direcciones de Flex</h2>
+    <div class="d-flex flex-row gap-2">
+        <div class="bg-primary text-white border p-3">Fila normal</div>
+        <div class="bg-primary text-white border p-3">Fila normal</div>
+    </div>
+    <br>
+    <div class="d-flex flex-row-reverse gap-2">
+        <div class="bg-danger text-white border p-3">Fila reversa</div>
+        <div class="bg-danger text-white border p-3">Fila reversa</div>
+    </div>
+    <br>
+    <div class="d-flex flex-column gap-2">
+        <div class="bg-warning text-white border p-3">Columna normal</div>
+        <div class="bg-warning text-white border p-3">Columna normal</div>
+    </div>
+
+    <br>
+    
+    <!-- Wrap -->
+    <h2>Flex Wrap</h2>
+    <div class="d-flex flex-wrap bg-secondary p-3 gap-2">
+        <div class="bg-success text-white border p-3 w-25">1</div>
+        <div class="bg-success text-white border p-3 w-25">2</div>
+        <div class="bg-success text-white border p-3 w-25">3</div>
+        <div class="bg-success text-white border p-3 w-25">4</div>
+        <div class="bg-success text-white border p-3 w-25">5</div>
+        <div class="bg-success text-white border p-3 w-25">6</div>
+    </div>
+
+    <br>
+    
+    <!-- Grow - Shrink -->
+    <h2>Flex Grow y Shrink</h2>
+    <div class="d-flex gap-2">
+        <div class="bg-info text-white border p-3 flex-grow-1">Crece</div>
+        <div class="bg-info text-white border p-3 flex-grow-0">No crece</div>
+    </div>
+
+    <br>
+    
+    <!-- Justify Content -->
+    <h2>Justify Content</h2>
+    <div class="d-flex justify-content-between bg-light border p-3">
+        <div class="bg-primary text-white border p-3">Start</div>
+        <div class="bg-primary text-white border p-3">End</div>
+    </div>
+    
+    <br>
+    
+    <!-- Align Items -->
+    <h2>Align Items</h2>
+    <div class="d-flex align-items-center bg-secondary border p-3" style="height: 100px;">
+        <div class="bg-danger text-white border p-3">Centro</div>
+        <div class="bg-danger text-white border p-3">Centro</div>
+    </div>
+
+    <br>
+    
+    <!-- Align Self -->
+    <h2>Align Self</h2>
+    <div class="d-flex bg-light border p-3" style="height: 120px;">
+        <div class="bg-danger text-white border p-3 align-self-start">Arriba</div>
+        <div class="bg-danger text-white border p-3 align-self-end">Abajo</div>
+    </div>
+
+    <br>
+    
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>

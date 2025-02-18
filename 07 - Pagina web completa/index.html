@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de navegación</title>
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Mi sitio web</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Contact</a>
+                    </li>
+
+                    <li class="nav-item dropdown" data-bs-toggle="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Desplegable</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">Link1</a></li>
+                            <li><a href="#" class="dropdown-item">Link2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form action="" class="d-flex">
+                    <input type="text" class="form-control" type="search" placeholder="buscar">
+                    <button class="btn btn-outline-success">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <section id="buscar">
+        <div class="container my-3">
+
+
+            <div class="card">
+                <div class="card-body">
+                    <form action="#">
+                        <div class="row gy-1">
+                            <div class="col-lg-4 col-sm-6 col-12">
+                                <input type="text" class="form-control" placeholder="buscar">
+                            </div>
+                            <div class="col-lg-3 col-sm-6 col-12">
+                                <select name="" id="" class="form-select">
+                                    <option value="" selected>Categoria</option>
+                                    <option value="">XBOX</option>
+                                    <option value="">PLAY5</option>
+                                    <option value="">Swich</option>
+                                    <option value="">Steam Deck</option>
+                                </select>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6 col-12">
+                                <select name="" id="" class="form-select">
+                                    <option value="" selected>Tiendas</option>
+                                    <option value="">Málaga</option>
+                                    <option value="">Madrid</option>
+                                    <option value="">Leon</option>
+                                </select>
+                            </div>
+
+                            
+                            <div class="col-lg-2 col-sm-4 col-12">
+                                <button class="btn btn-success w-100">Buscar</button>
+                            </div>
+                            <div class="col-lg-2 col-sm-4 col-12">
+                                <input type="checkbox" name="filtrar" id="filtrar" class="form-check-input">
+                                <label for="filtrar" class="form-check-label">Filtrar</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="categoria-lista my-4 container">
+
+        <div class="row gx-4 gy-4 row-cols-2 row-cols-lg-6 row-cols-md-4">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#">
+                            <div class="text-center">
+                                <i class="bi bi-lightbulb-fill fs-1"></i>
+                            </div>
+                            <h3 class="text-center">Estrategia</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#">
+                            <div class="text-center">
+                                <i class="bi bi-activity fs-1"></i>
+                            </div>
+                            <h3 class="text-center">Lucha</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#">
+                            <div class="text-center">
+                                <i class="bi bi-grid-1x2 fs-1"></i>
+                            </div>
+                            <h3 class="text-center">Cooperativo</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#">
+                            <div class="text-center">
+                                <i class="bi bi-activity fs-1"></i>
+                            </div>
+                            <h3 class="text-center">Plataforma</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#">
+                            <div class="text-center">
+                                <i class="bi bi-arrow-through-heart-fill fs-1"></i>
+                            </div>
+                            <h3 class="text-center">Terror</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#">
+                            <div class="text-center">
+                                <i class="bi bi-car-front-fill fs-1"></i>
+                            </div>
+                            <h3 class="text-center">Carreras</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#">
+                            <div class="text-center">
+                                <i class="bi bi-incognito fs-1"></i>
+                            </div>
+                            <h3 class="text-center">Misterio</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="#">
+                            <div class="text-center">
+                                <i class="bi bi-water fs-1"></i>
+                            </div>
+                            <h3 class="text-center">Acuaticos</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container">
+
+        <h2 class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, porro.</h2>
+        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam natus sunt doloremque unde repellat?</p>
+
+        <a href="#" class="btn btn-sm btn-secondary float-end"> Ver</a>
+        <p class="fst-italic text-muted">20-12-24</p>
+
+        <hr>
+                
+        <h2 class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, porro.</h2>
+        <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam natus sunt doloremque unde repellat?</p>
+
+        <a href="#" class="btn btn-sm btn-secondary float-end"> Ver</a>
+        <p class="fst-italic text-muted">05-10-24</p>
+
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a href="#" class="page-link">Anterior</a></li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">Siguiente</a></li>
+        </ul>
+
+        <a href="#" class="btn btn-primary btn-lg text-uppercase"> Publicaciones anteriores <i class="bi bi-arrow-right"></i></a>
+
+    </section>
+
+    <footer class="container">
+        <div class="row gx-4 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <ul class="text-center">
+                    <li class="list-inline-item">
+                        <a href="#">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <a href="#">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+
+                    <li class="list-inline-item">
+                        <a href="#">
+                            <i class="bi bi-youtube text-danger"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="small text-center">
+                    copyright  Mi web 2025
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+</body>
+
+</html>

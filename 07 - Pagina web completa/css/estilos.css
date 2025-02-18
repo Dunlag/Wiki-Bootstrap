@@ -1,0 +1,24 @@
+.categoria-lista i{
+    color: #8800AA;
+}
+
+.categoria-lista card{
+    height: 100%;
+    margin-top: 5px;
+    transition: .5s all;
+}
+
+.categoria-lista a{
+    text-decoration: none;
+    color: black;
+}
+
+.categoria-lista .card:hover {
+
+    background: #8800AA;
+}
+
+.categoria-lista .card:hover a,
+.categoria-lista .card:hover i{
+    color: white;
+}

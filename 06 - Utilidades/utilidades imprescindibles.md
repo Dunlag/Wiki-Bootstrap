@@ -147,5 +147,4 @@ Definir tamaño de elementos:
 
 ---
 
-Esta guía cubre las utilidades más usadas en Bootstrap. ¡Experimenta combinándolas para mejorar tus diseños! 🚀
 
